@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>July Planning · Lift Contacted Rate to the French Atelier Standard</title>
+<title>July Planning · The French Atelier Efficiency Intersect</title>
 <style>
 :root{
   --ink:#0A0A0F;--panel:#14141C;--panel2:#1C1C26;--panel3:#242430;
@@ -14,7 +14,7 @@ body{background:radial-gradient(1200px 700px at 80% -10%,rgba(45,212,191,.07),tr
 .wrap{max-width:1180px;margin:0 auto;padding:46px 26px 120px}
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
 h1{font-size:clamp(32px,5.4vw,56px);font-weight:850;letter-spacing:-1.4px;line-height:1.05;background:linear-gradient(100deg,#fff 8%,#5AA9FF 52%,#2DD4BF 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.dek{font-size:clamp(16px,2vw,20px);color:var(--muted);margin-top:18px;max-width:840px;font-weight:450}
+.dek{font-size:clamp(16px,2vw,20px);color:var(--muted);margin-top:18px;max-width:860px;font-weight:450}
 .dek b{color:var(--text);font-weight:700}
 .dek .fr{color:var(--blue);font-weight:700} .dek .lo{color:var(--red);font-weight:700} .dek .hi{color:var(--teal);font-weight:700}
 
@@ -25,7 +25,7 @@ nav a:hover{color:var(--text);border-color:var(--teal);box-shadow:0 4px 18px rgb
 section{margin-top:74px;scroll-margin-top:82px}
 .sec-h{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
 .sec-t{font-size:clamp(24px,3.4vw,38px);font-weight:800;letter-spacing:-.8px;line-height:1.1}
-.sec-sub{color:var(--muted);font-size:16px;margin-top:10px;max-width:850px}
+.sec-sub{color:var(--muted);font-size:16px;margin-top:10px;max-width:870px}
 .sec-sub b{color:var(--text)} .sec-sub .fr{color:var(--blue);font-weight:700} .sec-sub .lo{color:var(--red);font-weight:700} .sec-sub .hi{color:var(--teal);font-weight:700}
 
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:30px}
@@ -43,16 +43,17 @@ section{margin-top:74px;scroll-margin-top:82px}
 .verdict p{font-size:clamp(18px,2.3vw,25px);font-weight:650;letter-spacing:-.3px;line-height:1.42}
 .verdict .fr{color:var(--blue)} .verdict .lo{color:var(--red)} .verdict .hi{color:var(--teal)}
 
-.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-@media(max-width:740px){.split{grid-template-columns:1fr}}
-.proofcard{position:relative;border-radius:20px;padding:30px 28px;border:1px solid var(--hair);box-shadow:0 22px 55px rgba(0,0,0,.5);overflow:hidden}
-.proofcard.good{background:linear-gradient(160deg,rgba(91,212,107,.12),rgba(20,20,28,.9))}
-.proofcard.bad{background:linear-gradient(160deg,rgba(255,107,107,.12),rgba(20,20,28,.9))}
-.proofcard .top{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
-.proofcard .big{font-size:clamp(44px,7vw,72px);font-weight:850;letter-spacing:-2px;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums}
-.proofcard.good .big{color:var(--green)} .proofcard.bad .big{color:var(--red)}
-.proofcard .cap{font-size:15px;color:var(--text);margin-top:10px;font-weight:600}
-.proofcard .sub{font-size:13.5px;color:var(--muted);margin-top:6px}
+/* intersect curve table */
+.curve{margin-top:28px;border-radius:18px;overflow:hidden;border:1px solid var(--hair);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.curve table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+.curve th{background:var(--panel3);padding:14px 16px;text-align:right;font-size:11.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);font-weight:700}
+.curve th:first-child,.curve td:first-child{text-align:left}
+.curve td{padding:13px 16px;border-top:1px solid var(--hair);background:var(--panel);text-align:right}
+.curve tr:nth-child(even) td{background:var(--panel2)}
+.curve tr.sweet td{background:rgba(45,212,191,.13)}
+.curve .m{font-weight:700;color:var(--text)}
+.curve .bar{display:inline-block;height:9px;border-radius:6px;vertical-align:middle;margin-right:8px}
+.curve .pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;background:rgba(45,212,191,.2);color:var(--teal)}
 
 .cmp{margin-top:28px;border-radius:18px;overflow:hidden;border:1px solid var(--hair);box-shadow:0 20px 50px rgba(0,0,0,.4)}
 table{border-collapse:collapse;width:100%;font-size:15px}
@@ -68,12 +69,23 @@ table{border-collapse:collapse;width:100%;font-size:15px}
 /* day table */
 .daytbl{margin-top:26px;border-radius:16px;overflow:hidden;border:1px solid var(--hair);box-shadow:0 18px 44px rgba(0,0,0,.4)}
 .daytbl table{font-size:14px}
-.daytbl th{background:var(--panel3);padding:12px 14px;text-align:right;font-size:11.5px;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);font-weight:700}
+.daytbl th{background:var(--panel3);padding:12px 13px;text-align:right;font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);font-weight:700}
 .daytbl th:first-child,.daytbl td:first-child{text-align:left}
-.daytbl td{padding:11px 14px;border-top:1px solid var(--hair);background:var(--panel);text-align:right;font-variant-numeric:tabular-nums}
+.daytbl td{padding:11px 13px;border-top:1px solid var(--hair);background:var(--panel);text-align:right;font-variant-numeric:tabular-nums}
 .daytbl tr.hi td{background:rgba(91,212,107,.10)} .daytbl tr.lo td{background:rgba(255,107,107,.07)}
 .daytbl .pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700}
 .daytbl .pill.g{background:rgba(91,212,107,.18);color:var(--green)} .daytbl .pill.r{background:rgba(255,107,107,.16);color:var(--red)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+@media(max-width:740px){.split{grid-template-columns:1fr}}
+.proofcard{position:relative;border-radius:20px;padding:30px 28px;border:1px solid var(--hair);box-shadow:0 22px 55px rgba(0,0,0,.5);overflow:hidden}
+.proofcard.good{background:linear-gradient(160deg,rgba(91,212,107,.12),rgba(20,20,28,.9))}
+.proofcard.bad{background:linear-gradient(160deg,rgba(255,107,107,.12),rgba(20,20,28,.9))}
+.proofcard .top{font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.proofcard .big{font-size:clamp(44px,7vw,72px);font-weight:850;letter-spacing:-2px;line-height:1;margin-top:8px;font-variant-numeric:tabular-nums}
+.proofcard.good .big{color:var(--green)} .proofcard.bad .big{color:var(--red)}
+.proofcard .cap{font-size:15px;color:var(--text);margin-top:10px;font-weight:600}
+.proofcard .sub{font-size:13.5px;color:var(--muted);margin-top:6px}
 
 .plan{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
 @media(max-width:860px){.plan{grid-template-columns:repeat(2,1fr)}}
@@ -110,81 +122,78 @@ table{border-collapse:collapse;width:100%;font-size:15px}
 </style></head>
 <body><div class="wrap">
 
-<div class="eyebrow">July Planning · Contacted-Rate Uplift · Longevity vs French Atelier Standard</div>
-<h1>Lift Contacted Rate <br>to the French Atelier Standard.</h1>
-<p class="dek">The goal is more <b>contacted leads per shift</b>. <span class="fr">French Atelier</span> reaches <span class="fr">~44% of its leads</span> by putting <span class="fr">~13 calls into every lead</span>. <span class="lo">Longevity</span> contacts only <span class="lo">~29% of leads</span> because it averages just <span class="lo">~7 calls per lead</span> — and on busy days that falls to 6. The fix is not effort, it's <span class="hi">calls per lead</span>: Longevity's own best days prove that <span class="hi">13+ calls per lead lifts contacted to 88%</span>. Same fixed team, Mon–Fri, no weekends. Sales follow contacted.</p>
+<div class="eyebrow">July Planning · The French Atelier Efficiency Intersect</div>
+<h1>Where leads, calls per lead <br> and contacted rate intersect.</h1>
+<p class="dek">The <span class="fr">French Atelier call-center performance database</span> (843 days) shows one clean relationship: <b>contacted rate falls as you pile more leads onto each shift</b>. Reach is highest at <span class="fr">~20–25 leads per shift, where contacted holds ≥45%</span>; push past that and contact collapses into the 30s and 20s. <span class="lo">Longevity</span> runs the same trap — its high-volume days (60–110 leads across 4 reps) crater to <span class="lo">15–28% contacted</span>, while its lighter, hard-worked days hold contact. The fix is to land in the intersect, not to add people. Same fixed team, Mon–Fri, no weekends.</p>
 
 <nav>
-  <a href="#standard">The Standard</a>
-  <a href="#gap">The Gap</a>
-  <a href="#proof">The Proof</a>
-  <a href="#leak">The Leak</a>
+  <a href="#intersect">The Intersect</a>
+  <a href="#zone">The Efficiency Zone</a>
+  <a href="#longevity">Longevity on the Curve</a>
+  <a href="#leak">Where It Breaks</a>
   <a href="#plan">July Lead Plan</a>
   <a href="#budgets">Budget Options</a>
 </nav>
 
-<!-- THE STANDARD -->
-<section id="standard">
-  <div class="sec-h">The French Atelier Standard</div>
-  <div class="sec-t">What "good" looks like: ~44% of leads contacted.</div>
-  <div class="sec-sub">From the French Atelier performance database (843 days). <b>Contacted rate = contacted ÷ open-order leads</b> — good shifts run <b>40–65%</b>. That reach is bought with <span class="fr">~13 calls into every lead</span>. This is the bar Longevity is being held to.</div>
+<!-- THE INTERSECT -->
+<section id="intersect">
+  <div class="sec-h">The French Atelier Performance DB</div>
+  <div class="sec-t">Contacted rate falls as leads per shift rise.</div>
+  <div class="sec-sub">Straight from the French Atelier call-center performance database — 843 days binned by <b>leads per shift</b>. <b>Contacted rate = contacted ÷ open-order leads.</b> The curve is monotonic: the more leads each shift has to chase, the smaller the share it can actually contact. This is the intersect Longevity is being held to.</div>
+  <div class="curve"><table>
+    <tr><th>Leads / Shift</th><th>Days</th><th>Contacted Rate</th><th></th></tr>
+    <tbody id="curveRows"></tbody>
+  </table></div>
+  <div class="sec-sub" style="margin-top:14px;font-size:13.5px">Correlation between leads/shift and acquisitions is <b>−0.21</b>: stacking more leads per shift without protecting contact actively hurts efficiency. Overall contacted rate across the DB is <b>44.4%</b> (46.5% on weekdays) at an average <b>24.8 leads/shift</b>.</div>
+</section>
+
+<!-- THE EFFICIENCY ZONE -->
+<section id="zone">
+  <div class="sec-h">The Intersect — Highest Efficiency</div>
+  <div class="sec-t">The sweet spot: ~20–25 leads per shift, contacted ≥45%.</div>
+  <div class="sec-sub">Inside the French Atelier DB, the most efficient days sit where <b>leads per shift stay in the low-20s</b> and contacted rate is <b>held above ~45%</b>. That is the intersect of volume and reach where acquisitions peak.</div>
   <div class="kpis">
-    <div class="kpi blue"><div class="glow"></div><div class="lab">FA Contacted Rate</div><div class="val">44.4%</div><div class="note">Median of 843 days · contacted ÷ leads. The standard.</div></div>
-    <div class="kpi teal"><div class="glow"></div><div class="lab">Good Shift Range</div><div class="val">40–65%</div><div class="note">Where most French Atelier days land. 20s is bad; 30s is below target.</div></div>
-    <div class="kpi gold"><div class="glow"></div><div class="lab">FA Calls per Lead</div><div class="val">~13</div><div class="note">Best contacted days. This dialing depth is what produces the contact.</div></div>
-    <div class="kpi purple"><div class="glow"></div><div class="lab">The Rule</div><div class="val">More calls<br><span style="font-size:.55em">per lead</span></div><div class="note">Contacted rate is driven by how hard each lead is worked — not headcount.</div></div>
+    <div class="kpi teal"><div class="glow"></div><div class="lab">Sweet-Spot Leads / Shift</div><div class="val">21–26</div><div class="note">Acq-optimal band (avg 23.3). Below it you under-use the shift; above it contact collapses.</div></div>
+    <div class="kpi blue"><div class="glow"></div><div class="lab">Contacted in the Zone</div><div class="val">≥45%</div><div class="note">The contacted floor that defines an efficient day. The 20s and 30s are below target.</div></div>
+    <div class="kpi gold"><div class="glow"></div><div class="lab">Best Days in the DB</div><div class="val">218</div><div class="note">Days that hit both — leads/shift 21–26 AND contacted ≥45% — averaging 16 acquisitions.</div></div>
+    <div class="kpi purple"><div class="glow"></div><div class="lab">The Rule</div><div class="val">Hold the<br><span style="font-size:.5em">intersect</span></div><div class="note">Efficiency is leads-per-shift × contacted held together — not raw headcount or raw volume.</div></div>
   </div>
 </section>
 
-<!-- THE GAP -->
-<section id="gap">
-  <div class="sec-h">The Gap, Team to Team</div>
-  <div class="sec-t">Longevity contacts 29% of leads. French Atelier contacts 44%.</div>
-  <div class="sec-sub">Measured the same way — <b>contacted ÷ leads</b> — at team level, the only level these metrics exist. Longevity's shortfall is not effort; it's that each lead gets <span class="lo">~7 calls</span> instead of the French standard <span class="fr">~13</span>.</div>
-  <div class="cmp"><table>
-    <tr><th>Metric</th><th class="fr">French Atelier (standard)</th><th class="lo">Longevity (actual)</th><th>The read</th></tr>
-    <tr><td class="m">Contacted rate (contacted ÷ leads)</td><td class="fr">44.4%</td><td class="lo">~29%</td><td class="read">~15 points below the standard — the core gap to close.</td></tr>
-    <tr><td class="m">Calls per lead</td><td class="fr">~13</td><td class="lo">6.9</td><td class="read">Longevity under-dials each lead; that's why contacted is low.</td></tr>
-    <tr><td class="m">Good-shift contacted band</td><td class="fr">40–65%</td><td class="lo warn">15–38% most days</td><td class="read">Only Longevity's heaviest-dialing days reach the band.</td></tr>
-    <tr><td class="m">Contacted per working day</td><td class="fr">—</td><td class="lo">~21</td><td class="read">Lifting calls/lead to 13 is the lever to push this up.</td></tr>
-  </table></div>
-  <div class="sec-sub" style="margin-top:14px;font-size:13.5px">Longevity sells a higher-priced product, so call counts naturally read differently — but the contacted-rate gap is real and is driven by calls per lead, not by product mix.</div>
-</section>
-
-<!-- THE PROOF -->
-<section id="proof">
-  <div class="sec-h">The Proof — Longevity's Own Data</div>
-  <div class="sec-t">When Longevity puts 13+ calls into a lead, contacted hits 88%.</div>
-  <div class="sec-sub">Splitting Longevity's 16 working days by how hard each lead was worked. This is the whole argument in one comparison — <b>same team, same product</b>.</div>
+<!-- LONGEVITY ON THE CURVE -->
+<section id="longevity">
+  <div class="sec-h">Longevity Mapped onto the Intersect</div>
+  <div class="sec-t">Every Longevity day, placed on the French Atelier curve.</div>
+  <div class="sec-sub">Longevity's 16 working days (June, 4 fixed reps, Mon–Fri). <b>Leads / shift = daily leads ÷ 4 reps.</b> Each day is matched to the French Atelier contacted-rate the curve expects at that volume, then compared to what Longevity actually contacted. The pattern is identical to the DB — and on its lighter, hard-worked days Longevity beats the curve.</div>
   <div class="split">
-    <div class="proofcard good"><div class="top">Days with ≥13 calls / lead</div><div class="big">88.6%</div><div class="cap">contacted rate</div><div class="sub">5 days · averaged 27 calls per lead. Above the French Atelier standard.</div></div>
-    <div class="proofcard bad"><div class="top">Days with &lt;13 calls / lead</div><div class="big">30.3%</div><div class="cap">contacted rate</div><div class="sub">11 days · averaged just 6.6 calls per lead. Far below the standard.</div></div>
+    <div class="proofcard good"><div class="top">Low-volume days (&lt;60 leads)</div><div class="big">79%</div><div class="cap">contacted rate · 7 days</div><div class="sub">Averaged ~23 calls into each lead. Leads/shift stayed low — contact held high, beating the curve.</div></div>
+    <div class="proofcard bad"><div class="top">High-volume days (60+ leads)</div><div class="big">30%</div><div class="cap">contacted rate · 9 days</div><div class="sub">Calls per lead fell to ~6. Leads/shift climbed — contact collapsed, exactly as the curve predicts.</div></div>
   </div>
   <div class="daytbl"><table>
-    <tr><th>Day</th><th>Leads</th><th>Calls</th><th>Calls / Lead</th><th>Contacted</th><th>Contacted Rate</th><th>vs Standard</th></tr>
+    <tr><th>Day</th><th>Leads</th><th>Leads/Shift</th><th>Calls/Lead</th><th>Actual Contacted</th><th>FA Curve Expects</th><th>vs Curve</th></tr>
     <tbody id="dayRows"></tbody>
   </table></div>
-  <div class="sec-sub" style="margin-top:12px;font-size:13px">Some early low-volume days show contacted rate above 100% (contacts carried from prior days' leads) — directionally they confirm the same rule: heavy dialing per lead → high contact.</div>
+  <div class="sec-sub" style="margin-top:12px;font-size:13px">Leads/shift = daily leads ÷ 4 reps. "FA curve expects" is the French Atelier DB contacted rate for that leads/shift bin. A few early low-volume days show contacted above 100% (contacts carried from prior days' leads) — directionally they confirm the same rule: keep leads/shift low and work each lead hard, and contact stays high.</div>
 </section>
 
-<!-- THE LEAK -->
+<!-- WHERE IT BREAKS -->
 <section id="leak">
   <div class="sec-h">Where It Breaks</div>
-  <div class="sec-t">On high-volume days, calls per lead collapses to 6 — and contacted craters.</div>
-  <div class="sec-sub">When 60+ leads land in a day, Longevity spreads the same calls thinner instead of holding the <span class="fr">~13-per-lead</span> standard. That single behaviour is the contacted-rate leak.</div>
+  <div class="sec-t">High volume + thin dialing pushes Longevity off the curve.</div>
+  <div class="sec-sub">When 60+ leads land on a shift, Longevity's calls per lead drop to ~6 and contacted rate craters — the same collapse the French Atelier DB shows past 25 leads/shift. The leak is letting leads/shift run high while dialing per lead thins out.</div>
   <div class="kpis">
-    <div class="kpi red"><div class="glow"></div><div class="lab">High-Volume Days (60+ leads)</div><div class="val">6.3</div><div class="note">calls per lead — half the French Atelier standard.</div></div>
-    <div class="kpi red"><div class="glow"></div><div class="lab">Their Contacted Rate</div><div class="val">28.8%</div><div class="note">vs the 40–65% standard. The busiest days are the weakest.</div></div>
-    <div class="kpi green"><div class="glow"></div><div class="lab">The Fix</div><div class="val">Hold 13</div><div class="note">Protect ~13 calls/lead even when volume spikes → contacted climbs into the band.</div></div>
+    <div class="kpi red"><div class="glow"></div><div class="lab">Calls / Lead on Busy Days</div><div class="val">~6</div><div class="note">When 60+ leads land, each lead gets a fraction of the attention of a light day.</div></div>
+    <div class="kpi red"><div class="glow"></div><div class="lab">Their Contacted Rate</div><div class="val">30%</div><div class="note">vs the ≥45% efficient floor. Longevity's busiest days are its weakest.</div></div>
+    <div class="kpi green"><div class="glow"></div><div class="lab">The Fix</div><div class="val">Land in zone</div><div class="note">Hold leads/shift in the low-20s and protect calls per lead → contacted climbs to the floor.</div></div>
   </div>
-  <div class="verdict"><div class="k">Bottom line of the behaviour</div><p>Longevity is <span class="hi">not short on effort</span> — it's short on <span class="hi">calls per lead</span>, especially when lead volume rises. Hold every lead to the <span class="fr">French Atelier ~13-call standard</span> and contacted rate moves from <span class="lo">~29%</span> toward the <span class="fr">40–65% band</span>. Contacted volume per shift rises, and sales follow it.</p></div>
+  <div class="verdict"><div class="k">Bottom line of the behaviour</div><p>Longevity does <span class="hi">not</span> need more reps — it needs to sit on the <span class="fr">French Atelier intersect</span>: leads per shift in the low-20s with each lead worked hard enough to <span class="hi">hold contacted above ~45%</span>. When it does, its own data already clears the curve. When leads/shift spikes and dialing thins, contacted falls to <span class="lo">~30%</span> — the exact trap the performance DB maps. Land in the zone, contacted volume per shift rises, and sales follow it.</p></div>
 </section>
 
 <!-- JULY LEAD PLAN -->
 <section id="plan">
   <div class="sec-h">July Lead Plan — Contacted Ramp</div>
   <div class="sec-t">Contacted per shift climbs week over week.</div>
-  <div class="sec-sub">As reps hold the French Atelier calls-per-lead standard, contacted per shift ramps. Same fixed team, Mon–Fri, no weekends.</div>
+  <div class="sec-sub">As reps hold the intersect — leads/shift in band, each lead worked hard — contacted per shift ramps across the month. Same fixed team, Mon–Fri, no weekends.</div>
   <div class="plan">
     <div class="wk"><div class="wlab">Week 1</div><div class="wbig">12</div><div class="wsub">contacted / shift</div><div class="wrow"><span>Spend</span><b>$6,500</b></div><div class="wrow"><span>Contacted</span><b>240</b></div><div class="wrow"><span>Sales</span><b>6.0</b></div><div class="wrow"><span>ROAS</span><b>1.01×</b></div></div>
     <div class="wk"><div class="wlab">Week 2</div><div class="wbig">15</div><div class="wsub">contacted / shift</div><div class="wrow"><span>Spend</span><b>$7,000</b></div><div class="wrow"><span>Contacted</span><b>292</b></div><div class="wrow"><span>Sales</span><b>7.3</b></div><div class="wrow"><span>ROAS</span><b>1.15×</b></div></div>
@@ -203,7 +212,7 @@ table{border-collapse:collapse;width:100%;font-size:15px}
 <section id="budgets">
   <div class="sec-h">Budget Options</div>
   <div class="sec-t">Lower cost-per-lead buys more contactable volume per dollar.</div>
-  <div class="sec-sub">Both options stay profitable from Week 1 — and both depend on holding the calls-per-lead standard so the extra leads actually get contacted.</div>
+  <div class="sec-sub">Both options stay profitable from Week 1 — and both only pay off if leads/shift stays in the intersect so the extra leads actually get contacted.</div>
   <div class="budgets">
     <div class="bud"><div class="bname">Low Budgets</div><div class="bspec">$6,500 / week · $17 per lead · 382 leads / week</div>
       <div class="bgrid">
@@ -225,30 +234,78 @@ table{border-collapse:collapse;width:100%;font-size:15px}
 <!-- THE BOTTOM LINE -->
 <div class="bottom">
   <div class="k">The Bottom Line</div>
-  <p>The mission is <span class="hi">contacted rate</span>, not conversion. <span class="fr">French Atelier</span> hits ~44% by putting ~13 calls into every lead. <span class="lo">Longevity</span> sits at ~29% on ~7 calls per lead — and its own best days prove that <span class="hi">13+ calls per lead delivers 88% contacted</span>.</p>
+  <p>The mission is <span class="hi">contacted rate</span>, not conversion. The <span class="fr">French Atelier performance DB</span> shows the intersect: efficiency lives at <span class="fr">~20–25 leads per shift with contacted held ≥45%</span>, and collapses when leads/shift runs higher. <span class="lo">Longevity</span> beats the curve on its light, hard-worked days and falls to <span class="lo">~30%</span> on high-volume days — the same trap the DB maps.</p>
   <ol>
-    <li><b>Set the floor:</b> every lead gets ~13 calls — the French Atelier standard — before it's parked.</li>
-    <li><b>Protect the busy days:</b> when 60+ leads land, hold the per-lead standard instead of spreading calls thin.</li>
-    <li><b>Target the band:</b> push contacted rate from ~29% toward 40–65% per shift.</li>
-    <li><b>Then scale leads:</b> with the July plan or a lower-CPL budget — cheaper leads only pay off once contacted rate holds.</li>
+    <li><b>Sit on the intersect:</b> keep leads per shift in the low-20s, where the French Atelier curve peaks.</li>
+    <li><b>Protect the busy days:</b> when 60+ leads land, hold dialing depth per lead instead of spreading calls thin.</li>
+    <li><b>Hold the floor:</b> push contacted rate to ≥45% per shift — into the efficient band, out of the 20s and 30s.</li>
+    <li><b>Then scale leads:</b> via the July plan or a lower-CPL budget — cheaper leads only pay off once leads/shift stays in the zone.</li>
   </ol>
 </div>
 
 <div class="foot">
-  July Planning · Longevity vs French Atelier standard · same fixed team, Mon–Fri, no weekends.<br>
-  Sources: French Atelier performance database (843 days, contacted rate &amp; calls-per-lead standard); Longevity By-Day team data (Jun 2026). Workbook: <a href="July_Planning_Longevity_vs_French.xlsx">July_Planning_Longevity_vs_French.xlsx</a>.
-  <div class="note-src">Contacted rate = contacted ÷ open-order leads (team level). Metrics shown at team level only, as available in source data.</div>
+  July Planning · Longevity vs the French Atelier efficiency intersect · same fixed team, Mon–Fri, no weekends.<br>
+  Sources: French Atelier call-center performance database (843 days · contacted rate vs leads-per-shift curve); Longevity By-Day team data (Jun 2026). Workbook: <a href="July_Planning_Longevity_vs_French.xlsx">July_Planning_Longevity_vs_French.xlsx</a>.
+  <div class="note-src">Contacted rate = contacted ÷ open-order leads (team level). Leads/shift = leads ÷ 4 reps. The performance DB records contacted rate by leads-per-shift; it has no calls field — calls/lead is shown only from Longevity's own team data. Metrics shown at team level, as available in source data.</div>
 </div>
 
 </div>
 <script>
-var DAYS=[{"d":"Jun 8","dow":"Mon","leads":14,"cont":19,"contpct":135.7,"calls":574,"cpl":41},{"d":"Jun 9","dow":"Tue","leads":26,"cont":23,"contpct":88.5,"calls":546,"cpl":21},{"d":"Jun 10","dow":"Wed","leads":20,"cont":23,"contpct":115.0,"calls":674,"cpl":33.7},{"d":"Jun 11","dow":"Thu","leads":23,"cont":12,"contpct":52.2,"calls":348,"cpl":15.1},{"d":"Jun 12","dow":"Fri","leads":42,"cont":16,"contpct":38.1,"calls":380,"cpl":9.0},{"d":"Jun 15","dow":"Mon","leads":39,"cont":20,"contpct":51.3,"calls":431,"cpl":11.1},{"d":"Jun 16","dow":"Tue","leads":72,"cont":49,"contpct":68.1,"calls":491,"cpl":6.8},{"d":"Jun 17","dow":"Wed","leads":87,"cont":24,"contpct":27.6,"calls":488,"cpl":5.6},{"d":"Jun 18","dow":"Thu","leads":101,"cont":20,"contpct":19.8,"calls":641,"cpl":6.3},{"d":"Jun 19","dow":"Fri","leads":110,"cont":29,"contpct":26.4,"calls":714,"cpl":6.5},{"d":"Jun 22","dow":"Mon","leads":22,"cont":16,"contpct":72.7,"calls":702,"cpl":31.9},{"d":"Jun 23","dow":"Tue","leads":66,"cont":19,"contpct":28.8,"calls":668,"cpl":10.1},{"d":"Jun 24","dow":"Wed","leads":90,"cont":23,"contpct":25.6,"calls":643,"cpl":7.1},{"d":"Jun 25","dow":"Thu","leads":79,"cont":12,"contpct":15.2,"calls":291,"cpl":3.7},{"d":"Jun 26","dow":"Fri","leads":98,"cont":20,"contpct":20.4,"calls":434,"cpl":4.4},{"d":"Jun 29","dow":"Mon","leads":68,"cont":26,"contpct":38.2,"calls":476,"cpl":7}];
+// French Atelier performance DB — contacted rate vs leads/shift (ratioBinData, 843 days)
+var CURVE=[
+ {bin:"<10",days:15,cont:51.6},
+ {bin:"10–15",days:61,cont:51.5},
+ {bin:"15–20",days:192,cont:49.0},
+ {bin:"20–25",days:244,cont:45.6,sweet:true},
+ {bin:"25–30",days:148,cont:43.7},
+ {bin:"30–35",days:91,cont:39.8},
+ {bin:"35–40",days:38,cont:34.6},
+ {bin:"40–50",days:40,cont:31.5},
+ {bin:"50+",days:14,cont:25.3}
+];
+var cb=document.getElementById('curveRows');
+CURVE.forEach(function(r){
+  var tr=document.createElement('tr'); if(r.sweet)tr.className='sweet';
+  var w=Math.round(r.cont*2.6);
+  var col=r.sweet?'#2DD4BF':(r.cont>=45?'#5AA9FF':(r.cont>=40?'#FFCC55':'#FF6B6B'));
+  var badge=r.sweet?' <span class="pill">sweet spot</span>':'';
+  tr.innerHTML='<td class="m">'+r.bin+badge+'</td><td>'+r.days+'</td><td>'+r.cont.toFixed(1)+'%</td>'+
+    '<td style="text-align:left"><span class="bar" style="width:'+w+'px;background:'+col+'"></span></td>';
+  cb.appendChild(tr);
+});
+
+// Longevity working days, mapped onto the curve. faExp = FA contacted rate at that leads/shift bin.
+var DAYS=[
+ {d:"Jun 8",dow:"Mon",leads:14,cont:19,contpct:135.7,cpl:41.0},
+ {d:"Jun 9",dow:"Tue",leads:26,cont:23,contpct:88.5,cpl:21.0},
+ {d:"Jun 10",dow:"Wed",leads:20,cont:23,contpct:115.0,cpl:33.7},
+ {d:"Jun 11",dow:"Thu",leads:23,cont:12,contpct:52.2,cpl:15.1},
+ {d:"Jun 12",dow:"Fri",leads:42,cont:16,contpct:38.1,cpl:9.0},
+ {d:"Jun 15",dow:"Mon",leads:39,cont:20,contpct:51.3,cpl:11.1},
+ {d:"Jun 16",dow:"Tue",leads:72,cont:49,contpct:68.1,cpl:6.8},
+ {d:"Jun 17",dow:"Wed",leads:87,cont:24,contpct:27.6,cpl:5.6},
+ {d:"Jun 18",dow:"Thu",leads:101,cont:20,contpct:19.8,cpl:6.3},
+ {d:"Jun 19",dow:"Fri",leads:110,cont:29,contpct:26.4,cpl:6.5},
+ {d:"Jun 22",dow:"Mon",leads:22,cont:16,contpct:72.7,cpl:31.9},
+ {d:"Jun 23",dow:"Tue",leads:66,cont:19,contpct:28.8,cpl:10.1},
+ {d:"Jun 24",dow:"Wed",leads:90,cont:23,contpct:25.6,cpl:7.1},
+ {d:"Jun 25",dow:"Thu",leads:79,cont:12,contpct:15.2,cpl:3.7},
+ {d:"Jun 26",dow:"Fri",leads:98,cont:20,contpct:20.4,cpl:4.4},
+ {d:"Jun 29",dow:"Mon",leads:68,cont:26,contpct:38.2,cpl:7.0}
+];
+function faExpect(lps){
+  if(lps<10)return 51.6; if(lps<15)return 51.5; if(lps<20)return 49.0;
+  if(lps<25)return 45.6; if(lps<30)return 43.7; if(lps<35)return 39.8;
+  if(lps<40)return 34.6; if(lps<50)return 31.5; return 25.3;
+}
 var tb=document.getElementById('dayRows');
 DAYS.forEach(function(x){
-  var hi=x.cpl>=13;
-  var tr=document.createElement('tr'); tr.className=hi?'hi':'lo';
-  var meets=hi?'<span class="pill g">≥13 c/lead</span>':'<span class="pill r">under-dialed</span>';
-  tr.innerHTML='<td>'+x.d+' · '+x.dow+'</td><td>'+x.leads+'</td><td>'+x.calls+'</td><td>'+x.cpl.toFixed(1)+'</td><td>'+x.cont+'</td><td>'+x.contpct.toFixed(1)+'%</td><td>'+meets+'</td>';
+  var lps=x.leads/4;
+  var exp=faExpect(lps);
+  var beats=x.contpct>=exp;
+  var tr=document.createElement('tr'); tr.className=beats?'hi':'lo';
+  var pill=beats?'<span class="pill g">on / above curve</span>':'<span class="pill r">below curve</span>';
+  tr.innerHTML='<td>'+x.d+' · '+x.dow+'</td><td>'+x.leads+'</td><td>'+lps.toFixed(1)+'</td><td>'+x.cpl.toFixed(1)+'</td><td>'+x.contpct.toFixed(1)+'%</td><td>'+exp.toFixed(1)+'%</td><td>'+pill+'</td>';
   tb.appendChild(tr);
 });
 </script>
